@@ -1,16 +1,15 @@
 <script>
 	import { page } from '$app/stores';
-	//import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.png'
 </script>
 
 <header>
 	<div hidden class="corner">
-		<a></a>
-		<!--a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a-->
+		<a hidden href="https://kit.svelte.dev">
+			<img hidden src={logo} alt="SvelteKit" />
+		</a>
 	</div>
 
 	<nav>

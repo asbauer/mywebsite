@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	
 </script>
 
 <div class="app">
@@ -11,11 +12,26 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+    <hr>
+    <p>&copy;2023 Adam Bauer. All Rights Reserved. </p>
+
+</footer>
 </div>
 
 <style>
+
+	footer {
+    text-align: center;
+	}
+
+	footer p {
+		margin-top: 0.3%;
+	}
+
+	hr {
+    border: 1px solid brown;
+	width: 100%;
+	}
 	.app {
 		display: flex;
 		flex-direction: column;

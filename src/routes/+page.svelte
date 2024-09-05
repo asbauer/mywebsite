@@ -9,26 +9,60 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
+		Welcome
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
 
-	<Counter />
-</section>
+	<div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+
 
 <style>
+	 .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .loader .dot {
+            width: 16px;
+            height: 16px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background: #333;
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        .loader .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-24px);
+            }
+            60% {
+                transform: translateY(-12px);
+            }
+        }
+
+
+
+
+
 	section {
 		display: flex;
 		flex-direction: column;

@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import linkedin from '$lib/images/linkedin.png'
 </script>
 
 <header>
@@ -23,18 +24,26 @@
 				<a href="/about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+				<a href="/portfolio">Portfolio</a>
 			</li>
+			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+				<a href="/contact">Contact</a>
+			</li>
+
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+	<div id="corner-socials">
+		<a href="https://www.linkedin.com/in/asbauer/">
+			<img src={linkedin} alt="LinkedIn" />
+		</a>
+		<a href="https://github.com/asbauer">
 			<img src={github} alt="GitHub" />
 		</a>
+		
 	</div>
 </header>
 
@@ -44,11 +53,20 @@
 		justify-content: space-between;
 	}
 
-	.corner {
+	.corner,#corner-socials {
+		display: flex;
 		width: 3em;
 		height: 3em;
 	}
 
+	#corner-socials {
+		display: flex;
+		width:5em;
+		height: 3em;
+		justify-content: space-between;
+	}
+
+	
 	.corner a {
 		display: flex;
 		align-items: center;
@@ -57,16 +75,33 @@
 		height: 100%;
 	}
 
+	#corner-socials a {
+		display: flex;
+		margin: 5%;
+	}
+
 	.corner img {
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
+	
 	}
+		
+
+	#corner-socials img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		
+	}
+		
 
 	nav {
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
+		--background:rgba(18, 69, 126, 0.7);
+
 	}
 
 	svg {
@@ -121,9 +156,18 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
+		/*background-color:navy;
+		*/
 	}
 
 	a:hover {
 		color: var(--color-theme-1);
+		color: brown;
+	
+
 	}
+
+	
+
+	
 </style>

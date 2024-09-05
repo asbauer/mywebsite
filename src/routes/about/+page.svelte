@@ -1,6 +1,7 @@
-<!--script>
+<script>
   import Header from "../Header.svelte";
-</script-->
+  import gradphoto from "$lib/images/grad1.jpeg"
+</script>
 
 <html class="no-js" lang="en">
     <head>
@@ -33,8 +34,9 @@
     
         <div class="about-box" >
        
-            <img class="img-slide-right" src="src/lib/images/grad1.jpeg" alt="Graduation" title="Graduation photo. Onto the next chapter">
-      
+            <!--img class="img-slide-right" src="src/li/images/grad1.jpeg" alt="Graduation" title="Graduation photo. Onto the next chapter"-->
+            <img class="img-slide-right" src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
+
         <div class="about-text-div">
         <p class="right-text"> 
         For as long as I can remember, I've always wanted to build things. I always had this nagging question of wanting to know how technology works so that I could fulfill this desire to build and innovate. Now, as a recent graduate with a B.S in Computer Engineering from UCSD's Jacobs School of Engineering, I'm excited to fulfill this dream

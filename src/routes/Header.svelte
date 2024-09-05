@@ -1,15 +1,16 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	//import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.png'
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
+	<div hidden class="corner">
+		<a></a>
+		<!--a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />
-		</a>
+		</a-->
 	</div>
 
 	<nav>
@@ -51,6 +52,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		
 	}
 
 	.corner,#corner-socials {
@@ -101,6 +103,9 @@
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 		--background:rgba(18, 69, 126, 0.7);
+
+		justify-self: center;
+		text-align: center;
 
 	}
 
@@ -166,6 +171,8 @@
 	
 
 	}
+
+	
 
 	
 

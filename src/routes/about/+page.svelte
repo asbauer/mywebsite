@@ -1,6 +1,7 @@
 <script>
   import Header from "../Header.svelte";
   import gradphoto from "$lib/images/grad1.jpeg"
+  import '../styles.css';
 </script>
 
 <html class="no-js" lang="en">
@@ -27,7 +28,7 @@
    
     <noscript><p>JavaScript is currently disabled</p></noscript>
    
-<main id="about">
+
 
     
         <div class="about-box" >
@@ -374,7 +375,7 @@
 
         
 
-</main>
+
 
 </html>
 

@@ -138,6 +138,7 @@
 	
   }
 
+  /*
 @media screen and (min-width:501px) {
 .app{
 	width: 100%;
@@ -155,4 +156,5 @@
 	animation-timing-function: ease-in-out;
 }
 }
+*/
 </style>

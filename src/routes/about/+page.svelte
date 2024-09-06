@@ -36,29 +36,56 @@
        
             <!--img class="img-slide-right" src="src/li/images/grad1.jpeg" alt="Graduation" title="Graduation photo. Onto the next chapter"-->
             <!--img class="slide-in-from-left" src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter"-->
-            <img src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
+            <img class="slide-in-from-left" src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
 
 
         <div class="about-text-div slide-in-from-right">
-        <p class="right-text"> 
-        For as long as I can remember, I've always wanted to build things. I always had this nagging question of wanting to know how technology works so that I could fulfill this desire to build and innovate. Now, as a recent graduate with a B.S in Computer Engineering from UCSD's Jacobs School of Engineering, I'm excited to fulfill this dream
-        as I move forward into the next chapters. 
+        <p class="right-text lg-view"> 
+            For as long as I can remember, I've always wanted to build things. 
+            I always had this nagging question of wanting to know how technology works so that I could fulfill this desire to build and innovate.
+            Now, as a recent graduate with a B.S in Computer Engineering from UCSD's Jacobs School of Engineering, I'm excited to fulfill this dream
+            as I move forward into the next chapters. 
         </p>
-        <p id="right-text2">
+        <p id="right-text2" class="lg-view">
 			I've had the pleasure to work alongside classmates and engineers from various backgrounds and learn how to be a team player. 
             Within my free time, I joined Rocket Propulsion Laboratory (RPL), an organization of engineers sponsered by Collins Aerospace and Blue Origin 
-            with the goal to build rocketry. I worked as a software member on the Avionics team, and had the pleasure to learn how to work alongside
-            other different engineers to fulfill their software needs. I'm grateful for this time, as I was able to develop communication skills
-            of working with engineers from different majors and backgrounds.
+            with the goal to build rocketry. I worked as a software member on the Avionics team, and had the pleasure of working with engineers
+            of various majors and technical backgrounds while strengthening communcation skills
+            to address their software needs.
         </p>
 
-        <p id="text3-start" class="slide-in-from-bottom">
-            My remaining free time was spent towards Camp Kesem, a nation wide organization that helps provide support for children whose family members
+        <p class="below-text sm-view"> 
+            For as long as I can remember, I've always wanted to build things. 
+            I always had this nagging question of wanting to know how technology works so that I could fulfill this desire to build and innovate.
+        </p>
+        <p class="below-text sm-view">
+            Now, as a recent graduate with a B.S in Computer Engineering from UCSD's Jacobs School of Engineering, I'm excited to fulfill this dream
+            as I move forward into the next chapters. 
+            </p>
+
+        <p class="below-text sm-view">
+                Within my free time, I joined Rocket Propulsion Laboratory, an organization of engineers sponsered by Collins Aerospace and Blue Origin 
+                with the goal to build rocketry where I worked as a software member on the Avionics team, and had the pleasure to learn how to work alongside
+                other different engineers to fulfill their software needs.
+            </p>
+
+        <p class="below-text sm-view">
+            I'm grateful for this time, as I was able to develop communication skills
+                and learn to work with engineers from different majors and backgrounds.
+        </p>
+
+
+        <p id="kesem-start" class="slide-in-from-bottom">
+            I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
+            organization that helps provide support for children whose family members
             deal with cancer.
             I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
+        
+        </p>
+        <aside id="kesem-end">
             Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
-
-            </p>
+    
+        </aside>
         </div>
         
             <p id="text3-end" hidden>
@@ -407,7 +434,7 @@ h2#education {
 
 @keyframes slideFromTop{
     from {
-        transform: translateY(-300%);
+        transform: translateY(-400%);
     }
 
     to {
@@ -424,20 +451,120 @@ h2#education {
         transform: translateY(0) ;
     }
 
-
 }
 
+
+@media screen and (min-width:765px) {
+
+    .sm-view{
+        display:none ;
+    }
+
+    aside {
+        margin-top : 15px ; 
+    }
+
+
+	.about-box {
+		display: grid;
+		grid-template-columns: auto auto;
+		column-gap: 20px;
+		row-gap:3px ;
+		
+		grid-template-rows: auto auto;
+		
+	}
+
+	.right-text {
+		margin-top: 0px;
+		grid-column: 2;
+		grid-row: 1;
+		display: block;
+	}
+	#right-text2 {
+		grid-column: 2;
+		grid-row: 1;
+		display: block;
+	}
+
+	.about-text-div {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#kesem-start {
+		margin: 0px;
+		grid-row: 2;
+		grid-column: 1 /span 2
+		
+	}
+
+    h2,.slide-in-from-left {
+    animation: 1.5s ease-in  normal slideFromLeft;
+
+}
 img{
-    /* 
-    animation: slideLeft 3s ease-in 3 3 normal forwards;
-    animation: animation-name duration timing delay iteration direction
-    animation-name: slideLeft;
-    animation-duration: 2s;
-    */
     animation: 1.3s ease-in  normal slideFromLeft,
     1.5s ease-in  normal littleBobble;
-
    max-width: 100%;
+}
+.slide-in-from-right {
+    animation: 1.5s ease-in  normal slideFromRight;
+}
+
+.slide-in-from-bottom{
+        animation: 1.5s ease-in  normal slideFromBottom;
+    }
+
+h2#education{
+    text-align: left;
+    margin-left: 15%;
+}
+h2 {
+   text-align: center;
+    margin-bottom:1% ;
+    
+}
+
+
+p {
+    margin-top : 1% ;
+    margin-bottom:1%;
+    
+}
+
+
+h1{
+    animation: 1.2s ease-in normal slideFromTop;
+}
+
+
+
+ /*End of desktop margins1 */
+
+/*Start of desktop margins 2*/
+h2#education{
+    text-align: left;
+    margin-left: 15%;
+}
+h2 {
+   text-align: center;
+    margin-bottom:1% ;
+    
+}
+
+
+p {
+    margin-top : 1% ;
+    margin-bottom:1%;
+    
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h2#education{
@@ -456,18 +583,6 @@ p {
     margin-top : 1% ;
     margin-bottom:1%;
     
-}
-.slide-in-from-right {
-    animation: 1.5s ease-in  normal slideFromRight;
-}
-
-h1{
-    animation: 1.2s ease-in normal slideFromTop;
-}
-
-h2,.slide-in-from-left {
-    animation: 1.5s ease-in  normal slideFromLeft;
-
 }
     
 
@@ -493,9 +608,7 @@ h2,.slide-in-from-left {
         
     }
 
-    .slide-in-from-bottom{
-        animation: 1.5s ease-in  normal slideFromBottom;
-    }
+   
 
     p.progress-text {
         margin-top: 0;
@@ -520,18 +633,88 @@ h2,.slide-in-from-left {
         margin: 1% 0 1% 0;
     }
 
-
-
-
-
     
     h3#courses-header{
         text-align: center;
     }
 
-   
+   /*End of Desktop Margins 2*/
+}
+
+
+   @media  screen and (max-width:500px){
+
+    .lg-view {
+        display: none;
+    }
+    
+    p,aside {
+        text-align: center;
+        padding: 0 5% 0 5% ;
+    }
+
+    img {
+        width: 100dvw;
+    }
+
+    main {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    h1,h2,h3,h5 {
+        text-align: center;
+    }
+
+    .progress-text{
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+
+    ol {
+        padding-left: 6%;
+        padding-right: 2.5%;
+    }
+
+    .progress-subheader {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .summary {
+        display: inline;
+        text-decoration: none;
+       
+    }
+
+  
+
+
+    .overview {
+        list-style-type: none;
+    }
+
+    #education+ul{ 
+        cursor: default;
+        list-style-type: disc;
+
+    }
+
+   h4 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+
+    }
    
     
+   
+    
+   }
+   
+
   
 </style>
 

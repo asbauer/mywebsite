@@ -27,9 +27,13 @@
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 				<a href="/portfolio">Portfolio</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+			<li id="contact" aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
 				<a href="/contact">Contact</a>
 			</li>
+			<li id="resume" aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
+				<a href="/resume">Resume</a>
+			</li>
+
 
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -42,10 +46,10 @@
 			<img src={gmail} alt="Gmail" />
 		</a>
 		<a href="https://www.linkedin.com/in/asbauer/">
-			<img src={linkedin} alt="LinkedIn" height="100%" width="100%"/>
+			<img src={linkedin} alt="LinkedIn"/>
 		</a>
 		<a href="https://github.com/asbauer">
-			<img src={github} alt="GitHub" />
+			<img src={github} alt="GitHub"  />
 		</a>
 	
 		
@@ -53,6 +57,22 @@
 </header>
 
 <style>
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width:430px) {
+		#corner-socials, img{
+			visibility: hidden;
+		}
+	
+		nav {
+			width: 102dvw;
+		}
+	}
+	
+
+
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -183,7 +203,14 @@
 
 	
 
+	@media screen and (min-width:765px) {
+	#contact {
+		display: none;
+	}
+
 	
+	
+	}
 
 	
 </style>

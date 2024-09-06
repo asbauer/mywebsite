@@ -56,6 +56,8 @@
 		box-sizing: border-box;
 	}
 
+
+
 	footer {
 		display: flex;
 		flex-direction: column;
@@ -73,4 +75,12 @@
 			padding: 12px 0;
 		}
 	}
+
+	@media  screen and (max-width:500px){
+		main {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	 }
 </style>

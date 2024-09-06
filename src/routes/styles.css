@@ -254,7 +254,7 @@ h1 {
 
   @media screen and (max-width:500px) {
 	:root {
-		color: bisque;
+		color: bisque !important;
 		background-color: black;
 }
 

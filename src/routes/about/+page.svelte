@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width">
         
     </head>
-    <body>
+    
     <header>
         <h1>
             <span class="underline-container">
@@ -21,7 +21,6 @@
               </span>
               </h1>
     </header>
-
     
 
 
@@ -30,7 +29,6 @@
    
 <main id="about">
 
-    <section>
     
         <div class="about-box" >
        
@@ -378,7 +376,6 @@
 
 </main>
 
-    </body>
 </html>
 
 <style>
@@ -713,6 +710,30 @@ p {
    
     
    }
+
+/*
+   @keyframes colorChange {
+	0% {
+	  background-color: black; 
+	}
+	25% {
+		background-color: white;
+	}
+	50% {
+	  background-color: rgb(28, 26, 26); 
+	}
+	100% {
+	  background-color:rgb(18, 14, 14); 
+	}
+  }
+main{
+	width: 100%;
+	height: 100vh;
+	animation: colorChange 5s infinite; 
+    background-size: 200% 200%; 
+	animation-timing-function: ease-in-out;
+}
+    */
    
 
   

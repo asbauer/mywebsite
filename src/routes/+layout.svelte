@@ -83,4 +83,64 @@
 		}
 
 	 }
+
+/*
+@keyframes colorChange {
+	0% {
+	  background-color: black; 
+	}
+	50% {
+	  background-color: rgb(28, 26, 26); 
+	}
+	100% {
+	  background-color:rgb(18, 14, 14); 
+	}
+  }
+  
+  {
+	width: 100%;
+	height: 100vh;
+	animation: colorChange 5s infinite; 
+    background-size: 200% 200%; 
+	animation-timing-function: ease-in-out;
+}*/
+
+@keyframes colorChange {
+	0% {
+	  background-color: black; 
+	}
+
+	/*80% {
+		background-color:rgb(15, 15, 15); 
+
+	}*/
+	50% {
+		background-color:rgb(29, 27, 24); 
+
+	}
+	60% {
+		background-color:rgb(15, 15, 15); 
+
+	}
+
+	100% {
+	  background-color:rgb(5, 5, 5); 
+	}
+	
+  }
+.app{
+	width: 100%;
+	height: 100vh;
+	animation: colorChange 8s infinite; 
+    background-size: 200% 200%; 
+	animation-timing-function: ease-in-out;
+}
+
+.app{
+	width: 100%;
+	height: 100%;
+	animation: colorChange 8s infinite; 
+    background-size: 200% 200%; 
+	animation-timing-function: ease-in-out;
+}
 </style>

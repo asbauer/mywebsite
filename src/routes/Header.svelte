@@ -203,6 +203,9 @@
 	
 
 	}
+	
+
+	
 
 	
 	@media screen and (max-width:500px) {
@@ -221,6 +224,7 @@
 
 		nav a{
 			padding: 0% 1% 0% 1%;
+			
 			
 		}
 /*
@@ -246,12 +250,22 @@
 			justify-content: space-evenly;
 		}
 
+		a {
+			font-size: x-small;
+		}
 		
 
 	
 		
 	}
-	
+
+	@media screen and (max-width:330px) {
+		nav a {
+			font-size: x-small
+		}
+	}
+
+
 
 	
 </style>

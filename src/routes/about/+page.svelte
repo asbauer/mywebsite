@@ -74,6 +74,19 @@
         </p>
 
 
+        <p id="kesem-start" class="slide-in-from-bottom lg-view">
+            I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
+            organization that helps provide support for children whose family members
+            deal with cancer.
+            I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
+        
+        </p>
+        <aside id="kesem-end" class="lg-view">
+            Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
+    
+        </aside>
+        </div>
+
         <p id="kesem-start" class="slide-in-from-bottom">
             I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
             organization that helps provide support for children whose family members
@@ -85,7 +98,6 @@
             Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
     
         </aside>
-        </div>
         
             <p id="text3-end" hidden>
                 Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
@@ -650,6 +662,7 @@ p {
     .lg-view {
         display: none;
     }
+
     
     p,aside {
         text-align: center;
@@ -723,12 +736,16 @@ p {
         margin-bottom: 5px;
 
     }
+
+    li{
+        font-size: x-small;
+    }
    
-    
-   
+  
     
    }/*End phone styling*/
 
+  
 /*
    @keyframes colorChange {
 	0% {

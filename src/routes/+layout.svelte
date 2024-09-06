@@ -13,12 +13,19 @@
 
 	<footer>
     <hr>
-    <p>&copy;2023 Adam Bauer. All Rights Reserved. </p>
-
+    <p>&copy;2024 Adam Bauer. All Rights Reserved. 
+	</p>
+	<a id="email-attribution" href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a>
 </footer>
 </div>
 
 <style>
+
+	a#email-attribution{
+		color: var(--color-text,rgb(244, 229, 212));
+		text-decoration: none;
+		font-weight: 400;
+	}
 
 	footer {
     text-align: center;

@@ -35,7 +35,9 @@
         <div class="about-box" >
        
             <!--img class="img-slide-right" src="src/li/images/grad1.jpeg" alt="Graduation" title="Graduation photo. Onto the next chapter"-->
-            <img class="img-slide-right" src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
+            <!--img class="slide-in-from-left" src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter"-->
+            <img src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
+
 
         <div class="about-text-div">
         <p class="right-text"> 
@@ -369,6 +371,75 @@ h2#education {
 }
 */
 
+@keyframes slideFromLeft{
+    from {
+        transform: translateX(-300%);
+        
+    } 
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes littleBobble{
+    from{
+        transform:translateX(0) ;
+
+    }
+    to {
+        transform: translateX(-10);
+
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(300%);
+    }
+
+    to {
+        transform: translateX(0) ;
+    }
+
+
+}
+
+@keyframes slideFromTop{
+    from {
+        transform: translateY(-300%);
+    }
+
+    to {
+        transform: translateY(0) ;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(1000%);
+    }
+
+    to {
+        transform: translateY(0) ;
+    }
+
+
+}
+
+img{
+    /* 
+    animation: slideLeft 3s ease-in 3 3 normal forwards;
+    animation: animation-name duration timing delay iteration direction
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    */
+    animation: 1.3s ease-in  normal slideFromLeft,
+    1.5s ease-in  normal littleBobble;
+
+   max-width: 100%;
+}
+
 h2#education{
     text-align: left;
     margin-left: 15%;
@@ -377,12 +448,22 @@ h2#education{
 h2 {
    text-align: center;
     margin-bottom:1% ;
+    
 }
 
 
 p {
     margin-top : 1% ;
     margin-bottom:1%;
+    animation: 1.5s ease-in  normal slideFromRight;
+}
+
+h1{
+    animation: 1.2s ease-in normal slideFromTop;
+}
+
+h2,h3,h4,h5 {
+    animation: 1.5s ease-in  normal slideFromLeft;
 }
     
 
@@ -406,6 +487,10 @@ p {
     h4.progress-subheader{
         text-decoration: none;
         
+    }
+
+    ul,ol {
+        animation: 1.5s ease-in  normal slideFromBottom;
     }
 
     p.progress-text {

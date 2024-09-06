@@ -3,6 +3,7 @@
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 	import linkedin from '$lib/images/linkedin.png'
+	import gmail from '$lib/images/gmail.png'
 </script>
 
 <header>
@@ -37,12 +38,16 @@
 	</nav>
 
 	<div id="corner-socials">
+		<a href="mailto:abauer121@gmail.com">
+			<img src={gmail} alt="Gmail" />
+		</a>
 		<a href="https://www.linkedin.com/in/asbauer/">
 			<img src={linkedin} alt="LinkedIn" />
 		</a>
 		<a href="https://github.com/asbauer">
 			<img src={github} alt="GitHub" />
 		</a>
+	
 		
 	</div>
 </header>
@@ -160,6 +165,7 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
+		transition: transform 0.3s ease;
 		/*background-color:navy;
 		*/
 	}
@@ -167,6 +173,9 @@
 	a:hover {
 		color: var(--color-theme-1);
 		color: brown;
+		size: 2rem;
+		transform:scale(1.1);
+		
 	
 
 	}

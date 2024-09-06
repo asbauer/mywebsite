@@ -7,11 +7,11 @@
 </script>
 
 <header>
-	<!--div hidden class="corner">
+	<div hidden class="corner lg-view">
 		<a hidden href="https://kit.svelte.dev">
 			<img hidden src={logo} alt="SvelteKit" />
 		</a>
-	</div-->
+	</div>
 
 	<nav>
 		<svg class="lg-view" viewBox="0 0 2 3" aria-hidden="true">
@@ -128,6 +128,7 @@
 
 		justify-self: center;
 		text-align: center;
+		align-self: center;
 
 	}
 

@@ -21,10 +21,13 @@
 
 <style>
 
+	
+
 	a#email-attribution{
 		color: var(--color-text,rgb(244, 229, 212));
 		text-decoration: none;
 		font-weight: 400;
+		font-size: small;
 	}
 
 	footer {
@@ -70,19 +73,24 @@
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	@media (min-width: 501px) {
 		footer {
 			padding: 12px 0;
 		}
 	}
 
+	
 	@media  screen and (max-width:500px){
 		main {
 			padding-left: 0;
 			padding-right: 0;
 		}
+		footer p {
+			margin-bottom:1% ;
+		}
 
 	 }
+		
 
 /*
 @keyframes colorChange {
@@ -128,6 +136,8 @@
 	}
 	
   }
+
+@media screen and (min-width:501px) {
 .app{
 	width: 100%;
 	height: 100vh;
@@ -142,5 +152,6 @@
 	animation: colorChange 8s infinite; 
     background-size: 200% 200%; 
 	animation-timing-function: ease-in-out;
+}
 }
 </style>

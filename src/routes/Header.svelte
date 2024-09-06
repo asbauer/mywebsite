@@ -7,14 +7,14 @@
 </script>
 
 <header>
-	<div hidden class="corner">
+	<!--div hidden class="corner">
 		<a hidden href="https://kit.svelte.dev">
 			<img hidden src={logo} alt="SvelteKit" />
 		</a>
-	</div>
+	</div-->
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
+		<svg class="lg-view" viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
@@ -36,7 +36,7 @@
 
 
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
+		<svg class="lg-view" viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
 		</svg>
 	</nav>
@@ -57,18 +57,15 @@
 </header>
 
 <style>
+
+
+
+
+
+
 	img {
 		width: 100%;
 		height: 100%;
-	}
-	@media screen and (max-width:430px) {
-		#corner-socials, img{
-			visibility: hidden;
-		}
-	
-		nav {
-			width: 102dvw;
-		}
 	}
 	
 
@@ -202,15 +199,53 @@
 	}
 
 	
+	@media screen and (max-width:500px) {
+		#corner-socials, img, .lg-view{
+			display: none;
+		}
 
-	@media screen and (min-width:765px) {
-	#contact {
-		display: none;
-	}
+		ul {
+			width: 100%;
+			justify-content: space-evenly;
+		}
+
+		nav {
+			width: 100%;
+		}
+
+		nav a{
+			padding: 0% 1% 0% 1%;
+			
+		}
+/*
+		li {
+			margin-left: 2% ;
+			margin-right: 2%;
+		}
+
+		ul li:first-child {
+			padding-left: 2.5%;
+			margin-right: 2%;
+
+		}
+
+		ul li:last-child {
+			padding-right: 2.5%;
+			margin-left: 2%;
+			
+		}
+			*/
+
+		nav {
+			justify-content: space-evenly;
+		}
+
+		
 
 	
-	
+		
 	}
+	
 
 	
 </style>

@@ -651,7 +651,7 @@ p {
     }
 
     img {
-        width: 100dvw;
+        width: 100%;
     }
 
     main {
@@ -709,7 +709,7 @@ p {
     
    
     
-   }
+   }/*End phone styling*/
 
 /*
    @keyframes colorChange {

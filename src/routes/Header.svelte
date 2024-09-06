@@ -42,7 +42,7 @@
 			<img src={gmail} alt="Gmail" />
 		</a>
 		<a href="https://www.linkedin.com/in/asbauer/">
-			<img src={linkedin} alt="LinkedIn" />
+			<img src={linkedin} alt="LinkedIn" height="100%" width="100%"/>
 		</a>
 		<a href="https://github.com/asbauer">
 			<img src={github} alt="GitHub" />
@@ -56,6 +56,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		
 		
 	}
 

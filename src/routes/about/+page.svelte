@@ -39,7 +39,7 @@
             <img src={gradphoto} alt="Graduation" title="Graduation photo. Onto the next chapter">
 
 
-        <div class="about-text-div">
+        <div class="about-text-div slide-in-from-right">
         <p class="right-text"> 
         For as long as I can remember, I've always wanted to build things. I always had this nagging question of wanting to know how technology works so that I could fulfill this desire to build and innovate. Now, as a recent graduate with a B.S in Computer Engineering from UCSD's Jacobs School of Engineering, I'm excited to fulfill this dream
         as I move forward into the next chapters. 
@@ -52,7 +52,7 @@
             of working with engineers from different majors and backgrounds.
         </p>
 
-        <p id="text3-start">
+        <p id="text3-start" class="slide-in-from-bottom">
             My remaining free time was spent towards Camp Kesem, a nation wide organization that helps provide support for children whose family members
             deal with cancer.
             I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
@@ -68,7 +68,7 @@
     </div>
 
     <h2 id="education">Education</h2>
-            <ul id="education-list">
+            <ul id="education-list" class="slide-in-from-left">
                 <li>B.S in Computer Engineering from UCSD</li>
                 <li>Associates in Computer Science</li>
                 <li>Associates in Mathematics</li>
@@ -76,11 +76,11 @@
             </ul>
 
         <h2 id="languages-header">Languages/Tools</h2>
-        <p>A brief overview of tools I've worked with, click on a term to expand. </p>
-        <ul class="overview">
+        <p class="slide-in-from-right">A brief overview of tools I've worked with, click on a term to expand. </p>
+        <ul class="overview slide-in-from-bottom">
             <li>
                 <details>
-                <summary><h4 class="summary">Python</h4></summary>
+                <summary><h4 class="summary slide-in-from-left">Python</h4></summary>
                 <ul>
                     <li><h4>AI Search & Reasoning </h4> Implemented AI algorithms for decision based topics such as playing 2048, Black Jack, GO, using techniques such as Monte Carlo Tree Search, A* and Reinforcement Learning.  </li>
                     <li><h4>ML Recommender Systems </h4> Implemented ML methodologies ranging to provide as movie & product recommendations using various ML techniques</li>
@@ -91,7 +91,7 @@
             </details>
             </li>
             <li>
-            <details><summary><h4 class="summary">Java</h4></summary>
+            <details><summary><h4 class="summary slide-in-from-left">Java</h4></summary>
                <ul>
                 <li><h4>Nachos</h4> 
                 Implemented NACHOS for OS simulation.</li>
@@ -101,7 +101,7 @@
             </ul>
             </details></li>
         <li>
-            <details><summary><h4 class="summary">C++</h4></summary>
+            <details><summary><h4 class="summary slide-in-from-left">C++</h4></summary>
                 <ul>
                     <li>
                         <h4>Advanced Data Structures</h4>
@@ -117,7 +117,7 @@
        <li>
             <details>
                 <summary>
-                    <h4 class="summary">
+                    <h4 class="summary slide-in-from-left">
                         C
                     </h4>
                 </summary>
@@ -132,7 +132,7 @@
         <li>
             <details>
                 <summary>
-                    <h4 class="summary">
+                    <h4 class="summary slide-in-from-left">
                         Web Development
                     </h4>
                     
@@ -234,9 +234,9 @@
         </ul>
 
         <h2 id="in-progress">In Progress</h2>
-        <p class="progress-text">Here's currently some things I'm working on expanding my knowledge on or learning: 
+        <p class="progress-text slide-in-from-right">Here's currently some things I'm working on expanding my knowledge on or learning: 
         </p>
-        <ol>
+        <ol class="slide-in-from-bottom">
             <li>
             <h4 class="progress-subheader">Python Projects</h4> 
             <p class="progress-text">
@@ -270,7 +270,7 @@
             
         
             <h2 id="courses-header">Courses</h2>
-            <ul class="overview">
+            <ul class="overview slide-in-from-bottom">
                 <li>
                     <details> 
                         <summary>Advanced Data Structures</summary>
@@ -327,8 +327,8 @@
 
 
         
-        <h3 id="hobbies">Hobbies</h3>
-       <p>
+        <h2 id="hobbies" class="slide-in-from-left">Hobbies</h2>
+       <p class="slide-in-from-bottom slide-in-from-right">
         During my free time I enjoy lifting weights, hiking, learning guitar, watching old movies and
         spending time with my dog. I'm also a big foodie and enjoy cooking as well as discovering new spots to try different cuisines. 
         Idk insert more stuff here blah blah blah
@@ -455,6 +455,9 @@ h2 {
 p {
     margin-top : 1% ;
     margin-bottom:1%;
+    
+}
+.slide-in-from-right {
     animation: 1.5s ease-in  normal slideFromRight;
 }
 
@@ -462,8 +465,9 @@ h1{
     animation: 1.2s ease-in normal slideFromTop;
 }
 
-h2,h3,h4,h5 {
+h2,.slide-in-from-left {
     animation: 1.5s ease-in  normal slideFromLeft;
+
 }
     
 
@@ -489,7 +493,7 @@ h2,h3,h4,h5 {
         
     }
 
-    ul,ol {
+    .slide-in-from-bottom{
         animation: 1.5s ease-in  normal slideFromBottom;
     }
 

@@ -380,6 +380,11 @@
 </html>
 
 <style>
+
+    * {
+        --color-text: rgb(244, 229, 212) ;
+        color: var(--color-text,bisque) !important;
+    }
 /*
     h2 {
         margin-left: 2%;

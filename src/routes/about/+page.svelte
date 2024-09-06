@@ -659,14 +659,26 @@ p {
     img {
         width: 100%;
     }
-
+/*
     main {
+        padding-top: 1% ; 
         padding-left: 0%;
         padding-right: 0%;
     }
+        */
 
     h1,h2,h3,h5 {
         text-align: center;
+    }
+
+    h1 {
+        margin-top :1%  ;
+        margin-bottom: 4% ; 
+
+    }
+
+    .about-text-div:first-of-type p {
+        margin-top:8% ;
     }
 
     .progress-text{

@@ -84,6 +84,7 @@
 		main {
 			padding-left: 0;
 			padding-right: 0;
+			padding-top:3% ; 
 		}
 		footer p {
 			margin-bottom:1% ;

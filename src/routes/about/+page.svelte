@@ -74,31 +74,32 @@
         </p>
 
 
-        <p id="kesem-start" class="slide-in-from-bottom lg-view">
+        <p id="kesem-start" class="slide-in-from-bottom desktop-view">
             I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
             organization that helps provide support for children whose family members
             deal with cancer.
             I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
         
         </p>
-        <aside id="kesem-end" class="lg-view">
+        <aside id="kesem-end" class="desktop-view">
             Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
     
         </aside>
         </div>
 
-        <p id="kesem-start" class="slide-in-from-bottom">
+        <div class="ipad-div">
+        <p id="kesem-start" class="slide-in-from-bottom ipad-view sm-view">
             I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
             organization that helps provide support for children whose family members
             deal with cancer.
             I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
         
         </p>
-        <aside id="kesem-end">
+        <aside id="kesem-end" class="slide-in-from-bottom ipad-view sm-view">
             Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
     
         </aside>
-        
+        </div>
             <p id="text3-end" hidden>
                 Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
         
@@ -469,9 +470,9 @@ h2#education {
 }
 
 
-@media screen and (min-width:765px) {
+@media screen and (min-width:500px) {
 
-    .sm-view{
+    .sm-view, .ipad-view{
         display:none ;
     }
 
@@ -656,7 +657,25 @@ p {
    /*End of Desktop Margins 2*/
 }
 
+/*ipad adjust paragraphs */
+@media screen and (min-width: 501px) and (max-width: 925px) {
+   
 
+    .desktop-view {
+        display: none;
+    }
+
+    .ipad-view {
+        display: contents;
+    }
+
+    .ipad-div {
+        grid-column: 1 /span 2;
+    }
+
+
+    
+}
    @media  screen and (max-width:500px){
 
     .lg-view {

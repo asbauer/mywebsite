@@ -86,6 +86,7 @@
 		display: flex;
 		width: 3em;
 		height: 3em;
+		object-fit: contain;
 	}
 
 	#corner-socials {

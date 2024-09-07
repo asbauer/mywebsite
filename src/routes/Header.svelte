@@ -42,14 +42,14 @@
 	</nav>
 
 	<div id="corner-socials">
-		<a href="mailto:abauer121@gmail.com">
-			<img src={gmail} alt="Gmail" />
-		</a>
 		<a href="https://www.linkedin.com/in/asbauer/">
 			<img src={linkedin} alt="LinkedIn"/>
 		</a>
 		<a href="https://github.com/asbauer">
 			<img src={github} alt="GitHub"  />
+		</a>
+		<a href="mailto:abauer121@gmail.com">
+			<img src={gmail} alt="Gmail" />
 		</a>
 	
 		
@@ -91,7 +91,7 @@
 
 	#corner-socials {
 		display: flex;
-		width:5em;
+		width:3em;
 		height: 3em;
 		justify-content: space-between;
 	}

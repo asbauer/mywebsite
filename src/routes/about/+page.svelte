@@ -74,14 +74,14 @@
         </p>
 
 
-        <p id="kesem-start" class="desktop-view">
+        <p id="kesem-start" class="slide-in-from-bottom desktop-view">
             I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
             organization that helps provide support for children whose family members
             deal with cancer.
             I was lucky enough to work with some amazing kids, and even got to see them grow up over the years. 
         
         </p>
-        <aside id="kesem-end" class="desktop-view">
+        <aside id="kesem-end" class="slide-in-from-bottom desktop-view">
             Within all the decisions of my college career, and possibly my life, this volunteer work serves as one the best decisions I've ever made. 
     
         </aside>

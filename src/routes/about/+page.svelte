@@ -74,7 +74,7 @@
         </p>
 
 
-        <p id="kesem-start" class="slide-in-from-bottom desktop-view">
+        <p id="kesem-start" class="desktop-view">
             I'm also grateful for being able to volunteer with kids via Camp Kesem, a national 
             organization that helps provide support for children whose family members
             deal with cancer.

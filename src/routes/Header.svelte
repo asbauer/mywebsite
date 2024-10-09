@@ -45,7 +45,7 @@
 		<a href="https://www.linkedin.com/in/asbauer/">
 			<img src={linkedin} alt="LinkedIn"/>
 		</a>
-		<a href="https://github.com/asbauer">
+		<a hidden href="https://github.com/asbauer">
 			<img src={github} alt="GitHub"  />
 		</a>
 		<a href="mailto:abauer121@gmail.com">
